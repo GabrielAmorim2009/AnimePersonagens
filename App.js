@@ -1,14 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import personagens from './data/personagens.json';
+import Card from './components/card.js';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      {personagens.map((personagem) => (
+      <Card
+        key={personagem.id}
+        nome={personagem.nome}
+        img={personagem.img}
+        mundo={personagem.mundo}
+      />))}
     </View>
-  );
-}
+    )}
 
 const styles = StyleSheet.create({
   container: {
