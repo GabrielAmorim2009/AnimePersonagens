@@ -4,5 +4,35 @@
         "nome": "Zoro",
         "img": "https://i0.wp.com/ovicio.com.br/wp-content/uploads/2021/07/20210712-one-piece-zoro-wano-postcover.jpg?resize=555%2C555&ssl=1",
         "mundo": "One Piece"
+    },
+    {
+        "id": 2,
+        "nome": "Dabi",
+        "img": "https://www.denofgeek.com/wp-content/uploads/2022/12/My-Hero-Academia-Season-6-Episode-11-Dabi-Reveal.jpg?resize=768%2C432",
+        "mundo": "My Hero Academia"
+    },
+    {
+        "id": 3,
+        "nome": "Denji",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI3crcPea4FmH444ECBuPfNiN8OaMgkQLigpYiOFEXyBiRIuA0muia_dELHVx679a3uKE&usqp=CAU",
+        "mundo": "Chainsaw-Man"
+    },
+    {
+        "id": 4,
+        "nome": "Kirishima",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrk8ceak3Ir0KHWowL56BmOPWE3ofI0pxcrQ&s",
+        "mundo": "My Hero Academia"
+    },
+    {
+        "id": 5,
+        "nome": "Tatsumaki",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfXpPxpljASwPrXheLesWZAQMUp9S95Px-fQ&s",
+        "mundo": "One Punch Man"
+    },
+    {
+        "id": 6,
+        "nome": "Baki",
+        "img": "https://i.pinimg.com/736x/03/f3/29/03f329d6098d389ff513c25428896571.jpg",
+        "mundo": "Baki Punch Man"
     }
 ]

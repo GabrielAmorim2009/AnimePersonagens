@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
-export default function Card({nome = 'Não Informado', img, mundo = 'Não Informado'}) {
+export default function Card({nome = 'Não Informado', img="", mundo = 'Não Informado'}) {
   return (
-    <View style={styles.container}>
-        <Image style={styles.img}>{img}</Image>
+    <View style={styles.card}>
+        <Image style={styles.img} source={{uri: img}}/>
         <Text style={styles.nome}>{nome}</Text>
         <Text style={styles.mundo}>{mundo}</Text>
     </View>
@@ -11,10 +11,33 @@ export default function Card({nome = 'Não Informado', img, mundo = 'Não Inform
 }
 
 const styles = StyleSheet.create({
-  container: {
+  card: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    border: "solid 2px gray",
+    borderRadius: 10,
+    margin: 4,
   },
+  img: {
+    flex: 1,
+    height: 150,
+    width: 150, 
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  nome: {
+    flex: 1,
+    height: 100,
+    width: 75,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  mundo: {
+    flex: 1,
+    height: 100,
+    width: 75,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
 });
