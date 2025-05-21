@@ -34,5 +34,17 @@
         "nome": "Baki",
         "img": "https://i.pinimg.com/736x/03/f3/29/03f329d6098d389ff513c25428896571.jpg",
         "mundo": "Baki Punch Man"
+    },
+    {
+        "id": 7,
+        "nome": "Obito",
+        "img": "https://pbs.twimg.com/profile_images/1378009668652568583/rLzCff-w_400x400.jpg",
+        "mundo": "Naruto"
+    },
+    {
+        "id": 8,
+        "nome": "Sung Jing Woo",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2mlhbcC6raKEivtXqT0BTqJhKk7e_z_Ehzg&s",
+        "mundo": "Solo Leving"
     }
 ]

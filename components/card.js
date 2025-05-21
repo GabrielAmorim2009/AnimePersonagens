@@ -1,43 +1,43 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Dimensions } from 'react-native';
 
-export default function Card({nome = 'Não Informado', img="", mundo = 'Não Informado'}) {
+const { width } = Dimensions.get('window'); // Obtém a largura da tela
+
+export default function Card({ nome = 'Não Informado', img = "", mundo = 'Não Informado' }) {
   return (
     <View style={styles.card}>
-        <Image style={styles.img} source={{uri: img}}/>
-        <Text style={styles.nome}>{nome}</Text>
-        <Text style={styles.mundo}>{mundo}</Text>
+      <Image style={styles.img} source={{ uri: img }} />
+      <Text style={styles.nome}>{nome}</Text>
+      <Text style={styles.mundo}>{mundo}</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    border: "solid 2px gray",
+    width: 180,
+    height: 180,
+    margin: 5,
+    backgroundColor: '#fff',
+    borderWidth: 3,
+    borderColor: "gray",
     borderRadius: 10,
-    margin: 4,
+    boxShadow: "0 0 7px black",
+    padding: 10,
   },
   img: {
-    flex: 1,
-    height: 150,
-    width: 150, 
-    justifyContent: 'center',
-    alignItems: 'center',
+    width: '100%',
+    height: 100,
+    borderTopRightRadius: 6,
+    borderTopLeftRadius: 6,
   },
   nome: {
-    flex: 1,
-    height: 100,
-    width: 75,
-    justifyContent: 'center',
-    alignItems: 'center',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 10,
   },
   mundo: {
-    flex: 1,
-    height: 100,
-    width: 75,
-    justifyContent: 'center',
-    alignItems: 'center',
+    textAlign: 'center',
+    fontSize: 12,
+    marginTop: 5,
   }
 });
